@@ -4,7 +4,7 @@ recr = Flask(__name__)
 
 @recr.route('/')
 def hello():
-    name = request.args.get('name', 'друг')  # если параметр не передан, используем 'друг'
+    name = request.args.get('name', 'Друг') 
     message = request.args.get('message', '')
 
     # Создаём ответ
